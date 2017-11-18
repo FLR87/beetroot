@@ -94,11 +94,28 @@
 //echo $number > 10 ? "yes" : "no";
 //echo "</pre>";
 
-$name = "Sergey";
-    switch ($name){
-        case "Sergey":
-            echo "Hello,".$name;
-            break;
-    }
+//$name = "dude";
+//    switch ($name){
+//        case "Sergey":
+//            echo "Hello,".$name;
+//            break;
+//        case "Alex":
+//            echo "Hello,".$name;
+//            break;
+//        default:
+//            echo "We don't know eachother";
+//            break;
+//    }
+//
+//$fruits = ['a '=>'apple','b '=>'bananna','o '=>'orange','p '=>'pear'];
+//foreach ($fruits as $key=>$fruit){
+//    print $key. 'stands for '.$fruit."</br>";
+//}
+
+$fruits = ['apple','bananna','orange','pear'];
+
+for ($i=0;$i < count($fruits);$i++){
+    echo $fruits[$i]."</br>";
+}
 
 ?>
