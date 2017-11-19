@@ -142,6 +142,8 @@
 //    fwrite($fp,$text);
 //    fclose($fp);
 
+//----------------------------------------
+
 //$array = ['5'=>'Sergey','10'=>'Alexander','15'=>'Alexey','20'=>'Anna', '25'=>'Tanya'];
 //foreach ($array as $key => $val) {
 //
@@ -149,12 +151,59 @@
 //    echo "$key = $val";
 //    echo "</pre>";
 //}
-
 //$chunks = array_chunk($array,2, true);
 //$diff = array_diff($array1,$array2);
 
-$array = ['5'=>'Sergey','10'=>'Alexander','15'=>'Alexey','20'=>'Anna', '25'=>'Tanya'];
-asort($array);
-var_dump(array_key_exists('10',$array));
+
+//$array = ['5'=>'Sergey','10'=>'Alexander','15'=>'Alexey','20'=>'Anna', '25'=>'Tanya'];
+//asort($array);
+//var_dump(array_key_exists('10',$array));
+
+
+//$array1 = ['a','b','c','z','e','f','g','a','a','f',];
+//$a = array_values(array_unique($array1));
+//asort($a);
+//echo "<pre>";
+//print_r($a);
+//echo "</pre>";
+
+//$array1 = ['a','b','c','z','e','f','g','a','a','f',];
+//$a = array_values(array_unique($array1));
+//asort($a);
+//echo "<pre>";
+//print_r($a);
+//echo "</pre>";
+
+//$fp = fopen("file.txt","a+");
+//// r
+//// r+
+//// w
+//// w+
+//// a
+//// a+
+//$text = "Hello,mfka";
+//fwrite($fp,$text);
+//fclose($fp);
+
+//// строка, которую будем записывать
+//$text = "Какой-то текст";
+//
+//// открываем файл, если файл не существует,
+////делается попытка создать его
+//$fp = fopen("file.txt", "w");
+//
+//// записываем в файл текст
+//fwrite($fp, $text);
+//
+//// закрываем
+//fclose($fp);
+
+
+//file_put_contents('test.txt',"Привет</br>",FILE_APPEND|LOCK_EX);
+//echo file_get_contents('test.txt');
+
+function fileGetContents(){
+        echo 111;
+}
 
 ?>
