@@ -202,6 +202,7 @@
 //file_put_contents('test.txt',"Привет</br>",FILE_APPEND|LOCK_EX);
 //echo file_get_contents('test.txt');
 
+
 function fileGetContents(){
         echo 111;
 }
