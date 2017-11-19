@@ -112,10 +112,49 @@
 //    print $key. 'stands for '.$fruit."</br>";
 //}
 
-$fruits = ['apple','bananna','orange','pear'];
+//$fruits = ['apple','bananna','orange','pear'];
+//
+//for ($i=0;$i < count($fruits);$i++){
+//    echo $fruits[$i]."</br>";
 
-for ($i=0;$i < count($fruits);$i++){
-    echo $fruits[$i]."</br>";
-}
+//$i=0;
+//    while ($i<=15){
+//     echo $i.'</br>'; $i+=1;
+//    }
+
+
+//$i=0;
+//    do{
+//        echo $i.'</br>';
+//        $i += 1;
+//    }while($i <= 25);
+
+// <=========================РАБОТА С ФАЙЛАМИ!!!
+
+//    $fp = fopen("beetroot/file.txt","a+");
+//    // r
+//    // r+
+//    // w
+//    // w+
+//    // a
+//    // a+
+//    $text = "Hello,mfka"/n;
+//    fwrite($fp,$text);
+//    fclose($fp);
+
+//$array = ['5'=>'Sergey','10'=>'Alexander','15'=>'Alexey','20'=>'Anna', '25'=>'Tanya'];
+//foreach ($array as $key => $val) {
+//
+//    echo "<pre>";
+//    echo "$key = $val";
+//    echo "</pre>";
+//}
+
+//$chunks = array_chunk($array,2, true);
+//$diff = array_diff($array1,$array2);
+
+$array = ['5'=>'Sergey','10'=>'Alexander','15'=>'Alexey','20'=>'Anna', '25'=>'Tanya'];
+asort($array);
+var_dump(array_key_exists('10',$array));
 
 ?>
