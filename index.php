@@ -1,5 +1,4 @@
 <?php
-
 $arrayCount = [1,2,3,4,5];
 $userFunc = function ($result) {
     // $result исходные данные которые мы передали при вызове call_user_func
@@ -21,15 +20,15 @@ echo "</pre>";
  * @param $callback Функция для дополнтительной обработки исходного массива
  * @return mixed
  */
- function myFunction($arrayCount, $callback) {
-     // Записывает исходный массив в переменную $result['current']
-     $result['current'] = $arrayCount;
-     //Проверяем является ли переданный параметр функцией.
-     if (is_callable($callback)) {
-         //Вызываем переданную пользовательскую функцию и возвращаем обработанные данные
-         $result = call_user_func($callback, $result);
-     }
-     //Возвращаем финальный результат.
-     return $result;
- }
+function myFunction($arrayCount, $callback) {
+    // Записывает исходный массив в переменную $result['current']
+    $result['current'] = $arrayCount;
+    //Проверяем является ли переданный параметр функцией.
+    if (is_callable($callback)) {
+        //Вызываем переданную пользовательскую функцию и возвращаем обработанные данные
+        $result = call_user_func($callback, $result);
+    }
+    //Возвращаем финальный результат.
+    return $result;
+}
 ?>
