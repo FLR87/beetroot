@@ -1,30 +1,12 @@
 <?php
 $array = [1, -1, 'key', 25, -25, 'waffle', 50, -50, '(^_^)'];
 
-print_r('Unprocessed array </br>');
+echo 'Unprocessed array: </br>';
 print_r($array);
+echo '</br>';
 
-$positiveFunction = function ($var) {
-    foreach ($var as $value) {
-        // is value positive;
-        if ($value >= 0) {
-            $result[] = $value;
-        }
-    }
-    return $result;
-};
-$negativeFunction = function ($var) {
-    foreach ($var as $value ){
-        // is value negative;
-        if ($value < 0) {
-            $result[] = $value;
-        }
-    }
-    return $result;
-};
 function stringFilter($array1, $callback = null)
 {
-    // String values has been filtered away:
     for ($i = 0; $i < count($array1); $i++) {
         If (is_numeric($array1 [$i])) {
             $result[] = $array1 [$i];
@@ -38,10 +20,31 @@ function stringFilter($array1, $callback = null)
     return $result;
 }
 
-echo('<br><br> Массив состоящий только из чисел (фильтр исходного)<br>');
+// Value positive check:
+$positiveFunction = function ($num) {
+    foreach ($num as $value) {
+        if ($value >= 0) {
+            $result[] = $value;
+        }
+    }
+    return $result;
+};
+// Value negative check:
+$negativeFunction = function ($num) {
+    foreach ($num as $value) {
+        if ($value < 0) {
+            $result[] = $value;
+        }
+    }
+    return $result;
+};
+//Results:
+echo(' Strings only:</br>');
 print_r(stringFilter($array));
-echo('<br><br> Числа массива, которые БОЛЬШЕ нуля <br>');
+echo '</br>';
+echo(' Values bigger then zero: </br>');
 print_r(stringFilter($array, $positiveFunction));
-echo('<br><br> Числа массива, которые МЕНЬШЕ нуля <br>');
+echo '</br>';
+echo(' Values lower then zero: </br>');
 print_r(stringFilter($array, $negativeFunction));
 ?>
