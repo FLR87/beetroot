@@ -203,8 +203,40 @@
 //echo file_get_contents('test.txt');
 
 
-function fileGetContents(){
-        echo 111;
-}
+//function fileGetContents(){
+//        echo 111;
+//}
+
+//$str1 = 'php';
+//echo mb_strtoupper($str1, 'utf-8');
+
+//$str1 = 'php';
+//echo mb_strtolower($str1, 'utf-8');
+
+
+//$str1 = 'PHP';
+//echo str_replace('PHP','Php',$str1);
+
+//echo ucfirst(strtolower('PHP'));
+
+//$str = 'html css php';
+//echo mb_substr($str, 0, 4, 'utf-8'). '</br>';
+//echo mb_substr($str, 5, 3, 'utf-8'). '</br>';
+//echo mb_substr($str, -3, 3, 'utf-8'). '</br>';
+
+//echo str_replace('.','-','31.12.2013');
+
+//HomeWork
+
+//'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard'
+
+//1. Удаление заданной подстроки "and" из текста.
+//2. Количество вхождений подстроки "and" в тексте.
+//3. Определить длины кратчайшего и самого длинного слова в строке.
+//4. Если текущее слово в строке содержит букву "а" сделать его upperr.
+
+//$str='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard\'';
+//echo str_replace('and','',$str);
+
 
 ?>
