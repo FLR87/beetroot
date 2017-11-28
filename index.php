@@ -72,7 +72,7 @@ if (isset($_FILES['file'])) {
     </p>
     <p>
         Birth Date: <input type="date" placeholder="date" name="date"
-                           value="<?= ($_POST['name']) ? $_POST['name'] : "" ?>">
+                           value="<?= ($_POST['date']) ? $_POST['date'] : "" ?>">
     </p>
     <p>
         Avatar: <input type="file" name="file">
