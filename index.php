@@ -39,7 +39,6 @@ if (isset($_FILES['file'])) {
     }
 }
 
-
 ?>
 <!doctype html>
 <html>
